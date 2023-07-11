@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Styles for Body */
+body {
+  background: rgb(17, 24, 39);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Hero Section Background */
+#hero-image {
+  background-image: url("/movieCollage.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+/* Filter Bar Background */
+#filter-bar {
+  background: rgba(212, 212, 212, 0.3);
+  backdrop-filter: blur(15px);
+}
+
+/* Navigation Bar Style*/
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 0.8rem;
+}
+
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+nav a#active {
+  background: rgb(77, 181, 255);
+  color: black;
+}
+
+/* Scroll Bar Style for Carousel */
+#scroll-bar::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+#scroll-bar::-webkit-scrollbar {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#scroll-bar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #f43f5e;
+}
